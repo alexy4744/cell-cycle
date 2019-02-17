@@ -29,6 +29,8 @@
       mitotic spindle during
       <router-link to="/prophase">prophase</router-link>. By the end of S phase, there will be
       <strong>double the amount of DNA</strong> and the cell will proceed to the G2 phase.
+
+      <v-img class="img" src="http://cyberbridge.mcb.harvard.edu/images/mitosis4_2.png"/>
     </p>
 
     <h2 class="sub-topic">

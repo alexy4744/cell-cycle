@@ -1,5 +1,17 @@
 <template>
-  
+  <div class="content">
+    <h1 class="topic">
+      <strong>Metaphase</strong>
+    </h1>
+
+    <p class="tagline">Phase where the cell gets ready for division</p>
+
+    <p class="information">
+      After the mitotic spindle moves and lines up the chromosome in place at the metaphase plate/equatorial
+      plane (center of the cell), it verifies that the
+      <router-link to="/prophase">kinetochore microtubules</router-link> are properly binded to the chromosome.
+    </p>
+  </div>
 </template>
 
 <script lang="ts">
@@ -16,7 +28,7 @@ export default class Metaphase extends Vue {
 
 a,
 strong {
-  color: #E65100;
+  color: #e65100;
 }
 </style>
 

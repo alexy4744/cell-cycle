@@ -64,7 +64,7 @@ import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class App extends Vue {
   private currentColor: number = 0;
-  private navColors: string[] = ["blue", "teal", "red", "orange darken-3", "indigo", "purple"]
+  private navColors: string[] = ["blue", "teal", "red", "orange darken-4", "indigo", "purple"]
   private routes: string[] = ["/", "/interphase", "/prophase", "/metaphase", "/anaphase", "/telophase"]
 
   get color(): string | undefined {
@@ -85,6 +85,10 @@ export default class App extends Vue {
 </script>
 
 <style lang="scss" scoped>
+#app {
+  background: white !important;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.15s ease;
