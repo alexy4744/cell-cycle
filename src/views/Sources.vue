@@ -27,6 +27,20 @@
       class="information"
       href="https://www.sparknotes.com/biology/cellreproduction/mitosis/section3/"
     >https://www.sparknotes.com/biology/cellreproduction/mitosis/section3/</a>
+    
+    <a
+      class="information"
+      href="https://www.khanacademy.org/science/biology/cellular-molecular-biology/stem-cells-and-cancer/a/cell-cycle-checkpoints-article/"
+    >https://www.khanacademy.org/science/biology/cellular-molecular-biology/stem-cells-and-cancer/a/cell-cycle-checkpoints-article/</a>
+    
+    <a class="information"
+      href="https://www.yourgenome.org/facts/mitosis-versus-meiosis"
+    >https://www.yourgenome.org/facts/mitosis-versus-meiosis</a>
+    
+    <a
+      class="information"
+      href="https://www.nature.com/scitable/topicpage/replication-and-distribution-of-dna-during-meiosis-6524853"
+    >https://www.nature.com/scitable/topicpage/replication-and-distribution-of-dna-during-meiosis-6524853</a>
 
     <v-fab-transition>
       <v-btn

@@ -47,7 +47,7 @@
 
     <p class="information" style="margin-top: 70px">
       Once cytokinesis is complete, the process of cell division is complete and the new cells will carry out
-      cell division again if it ever needs to, why is why it is a cycle.
+      cell division again if it ever needs to, which is why it is a cycle.
     </p>
 
     <v-img

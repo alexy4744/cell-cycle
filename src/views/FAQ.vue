@@ -7,12 +7,12 @@
     <p class="tagline">Frequently Asked Questions</p>
 
     <p class="information">
-      <strong>Q:</strong> Why is it important for the cell cycle to be regulated?
+      <strong>Q:</strong> What is the difference between mitosis and meiosis?
     </p>
     <p class="information">
-      <strong>A:</strong> Cell cycle regulation prevents the cell from being mutated. If the cell cycle was not regulated,
-      then the phases may be triggered prematurely or not even be triggered at all. There would also be no checkpoints between
-      each phase, making it easy for mutations to occur. This could lead to abnormalities and can lead to cancer.
+      <strong>A:</strong> Both mitosis and meiosis go through the same process for cell division. However, in meiosis, you create
+      4 sex cells that are not identical, while in mitosis, you create 2 daughter cells that are identical. This is because meiosis
+      create cells to become gametes which will make zygotes.
     </p>
 
     <hr>
@@ -25,6 +25,17 @@
       However, if the DNA is in fact damaged and is passed on, cells that have these DNA normally undergo apoptosis, which is
       programmed cell death. But some cells that do have damaged DNA are unable to undergo apoptosis. These cells may or may not
       become cancer cells if they start dividing uncontrollably without signals to do so.
+    </p>
+
+    <hr>
+
+    <p class="information">
+      <strong>Q:</strong> Why is it important for the cell cycle to be regulated?
+    </p>
+    <p class="information">
+      <strong>A:</strong> Cell cycle regulation prevents the cell from being mutated. If the cell cycle was not regulated,
+      then the phases may be triggered prematurely or not even be triggered at all. There would also be no checkpoints between
+      each phase, making it easy for mutations to occur. This could lead to abnormalities and can lead to cancer.
     </p>
   </div>
 </template>
