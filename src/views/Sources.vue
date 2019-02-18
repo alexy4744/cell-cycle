@@ -23,6 +23,10 @@
       class="information"
       href="https://study.com/academy/lesson/anaphase-definition-lesson-quiz.html"
     >https://study.com/academy/lesson/anaphase-definition-lesson-quiz.html</a>
+    <a
+      class="information"
+      href="https://www.sparknotes.com/biology/cellreproduction/mitosis/section3/"
+    >https://www.sparknotes.com/biology/cellreproduction/mitosis/section3/</a>
   </div>
 </template>
 
