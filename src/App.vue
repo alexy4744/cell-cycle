@@ -8,7 +8,7 @@
 
     <v-fab-transition>
       <v-btn
-        v-show="$route.path !== '/'"
+        v-if="$route.path !== '/' && $route.path !== '/sources'"
         :color="color"
         @click="next"
         style="margin-bottom: 65px;"
@@ -19,6 +19,22 @@
         fab
       >
         <v-icon>navigate_next</v-icon>
+      </v-btn>
+    </v-fab-transition>
+
+    <v-fab-transition>
+      <v-btn
+        v-if="$route.path === '/sources'"
+        :color="color"
+        @click="goto(1)"
+        style="margin-bottom: 65px;"
+        dark
+        fixed
+        bottom
+        right
+        fab
+      >
+        <v-icon>navigate_before</v-icon>
       </v-btn>
     </v-fab-transition>
 
@@ -53,6 +69,11 @@
           <span>Telophase</span>
           <v-icon>filter_5</v-icon>
         </v-btn>
+
+        <v-btn dark to="/sources">
+          <span>Sources</span>
+          <v-icon>link</v-icon>
+        </v-btn>
       </v-bottom-nav>
     </v-card>
   </v-app>
@@ -64,25 +85,64 @@ import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class App extends Vue {
   private currentColor: number = 0;
-  private navColors: string[] = ["blue", "teal", "red", "orange darken-4", "indigo", "purple"]
-  private routes: string[] = ["/", "/interphase", "/prophase", "/metaphase", "/anaphase", "/telophase"]
+  private navColors: string[] = [
+    "blue",
+    "teal",
+    "red",
+    "orange darken-4",
+    "indigo",
+    "purple"
+  ];
+  private routes: string[] = [
+    "/",
+    "/interphase",
+    "/prophase",
+    "/metaphase",
+    "/anaphase",
+    "/telophase",
+    "/sources"
+  ];
 
-  get color(): string | undefined {
+  private get color(): string | undefined {
     const color: string = this.navColors[this.currentColor];
-    if (color) return color;
+    if (color) {
+      return color;
+    }
   }
 
   private next(): void {
     const currentRoute: string = this.$route.path;
-    if (!currentRoute || !this.routes.includes(currentRoute)) return;
+    if (!currentRoute || !this.routes.includes(currentRoute)) {
+      return;
+    }
 
-    const currentIndex: number = this.routes.findIndex((route: string): boolean => route === currentRoute);
+    const currentIndex: number = this.routes.findIndex(
+      (route: string): boolean => route === currentRoute
+    );
 
-    if (currentIndex >= this.routes.length - 1) this.$router.push(this.routes[1]);
-    else this.$router.push(this.routes[currentIndex + 1])
+    if (currentIndex >= this.routes.length - 1) {
+      this.$router.push(this.routes[1]);
+    } else {
+      this.$router.push(this.routes[currentIndex + 1]);
+    }
+  }
+
+  private goto(where: number): void {
+    const to = this.routes[where];
+    if (!to) {
+      return;
+    }
+
+    this.$router.push(to);
   }
 }
 </script>
+
+<style lang="scss">
+html {
+  overflow-y: auto !important;
+}
+</style>
 
 <style lang="scss" scoped>
 #app {
@@ -91,11 +151,11 @@ export default class App extends Vue {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.15s ease;
+  transition: opacity 0.125s ease;
 }
 
 .fade-enter-active {
-  transition-delay: 0.15s;
+  transition-delay: 0.125s;
 }
 
 .fade-enter,

@@ -15,13 +15,17 @@ export default new Router({
       component: Home
     },
     {
+      path: "/sources",
+      name: "sources",
+      component: () => import(/* webpackChunkName: "sources" */ "./views/Sources.vue")
+    },
+    {
       path: "/interphase",
       name: "interphase",
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "interphase" */ "./views/Interphase.vue")
+      component: () => import(/* webpackChunkName: "interphase" */ "./views/Interphase.vue")
     },
     {
       path: "/prophase",
@@ -29,8 +33,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "prophase" */ "./views/Prophase.vue")
+      component: () => import(/* webpackChunkName: "prophase" */ "./views/Prophase.vue")
     },
     {
       path: "/metaphase",
@@ -38,8 +41,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "metaphase" */ "./views/Metaphase.vue")
+      component: () => import(/* webpackChunkName: "metaphase" */ "./views/Metaphase.vue")
     },
     {
       path: "/anaphase",
@@ -47,8 +49,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "anaphase" */ "./views/Anaphase.vue")
+      component: () => import(/* webpackChunkName: "anaphase" */ "./views/Anaphase.vue")
     },
     {
       path: "/telophase",
@@ -56,8 +57,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "telophase" */ "./views/Telophase.vue")
+      component: () => import(/* webpackChunkName: "telophase" */ "./views/Telophase.vue")
     },
     {
       path: "/404",

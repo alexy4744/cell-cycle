@@ -20,9 +20,9 @@
   @include poly-fluid-sizing("padding-top", $padding-top);
 
   $padding-bottom: (
-    576px: 60px,
-    768px: 80px,
-    992px: 100px
+    576px: 75px,
+    768px: 95px,
+    992px: 115px
   );
   @include poly-fluid-sizing("padding-bottom", $padding-bottom);
 }
@@ -37,7 +37,7 @@
 }
 
 .tagline {
-  max-width: 90%;
+  max-width: 90vw;
   font-weight: 400;
   margin-top: 5px;
   color: lighten(black, 25%);
@@ -59,22 +59,28 @@
   @include poly-fluid-sizing("font-size", $map);
 }
 
+li,
 .information {
-  max-width: 90%;
-
   $map: (
     576px: 16px,
     768px: 16px,
     992px: 20px
   );
   @include poly-fluid-sizing("font-size", $map);
+}
 
+li {
+  margin-bottom: 15px;
+}
+
+.information {
+  max-width: 90vw;
   &:not(:last-child) {
     margin-bottom: 40px;
   }
+}
 
-  > .img {
-    width: 65%;
-    margin: 25px auto;
-  }
+.img {
+  width: 60%;
+  margin: 0 auto 25px auto;
 }

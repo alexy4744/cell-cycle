@@ -29,9 +29,9 @@
       mitotic spindle during
       <router-link to="/prophase">prophase</router-link>. By the end of S phase, there will be
       <strong>double the amount of DNA</strong> and the cell will proceed to the G2 phase.
-
-      <v-img class="img" src="http://cyberbridge.mcb.harvard.edu/images/mitosis4_2.png"/>
     </p>
+
+    <v-img class="img" src="http://cyberbridge.mcb.harvard.edu/images/mitosis4_2.png"/>
 
     <h2 class="sub-topic">
       <strong>G2 phase</strong>
@@ -49,9 +49,7 @@
 import { Component, Vue } from "vue-property-decorator";
 
 @Component
-export default class Interphase extends Vue {
-
-}
+export default class Interphase extends Vue {}
 </script>
 
 <style lang="scss" scoped>

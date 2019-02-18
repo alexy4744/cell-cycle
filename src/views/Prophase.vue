@@ -6,7 +6,7 @@
 
     <p class="tagline">
       The phase where the cell begins to break itself down to form new structures in favor of
-      mitosis
+      mitosis.
     </p>
 
     <p class="information">
@@ -23,17 +23,15 @@
       The mitotic spindle is extremely important during mitosis. It is used to transport chromosomes
       and are made with centrosomes. Centrosomes are made from microtubules, which are composed of the
       protein, tubulin. This is why the cell needed to make more protein during
-      <router-link to="/interphase">interphase</router-link>
-
-      as they are used to make one of the most
+      <router-link to="/interphase">interphase</router-link> as they are used to make one of the most
       important structures of mitosis. As prophase continues, the nucleolus breaks down, where the packed
       chromosomes are released and the mitotic spindle will start to bind to chromosomes.
-
-      <v-img
-        class="img"
-        src="https://cdn.kastatic.org/ka-perseus-images/28bb23d0a9f1dc1e0be333eaab8808a014120c8d.png"
-      />
     </p>
+
+    <v-img
+      class="img"
+      src="https://cdn.kastatic.org/ka-perseus-images/28bb23d0a9f1dc1e0be333eaab8808a014120c8d.png"
+    />
 
     <h2 class="sub-topic">
       <strong>Microtubules Binding</strong>
@@ -46,11 +44,12 @@
       because the strongest point of the chromosome is made from the protein, kinetochore. However, not all
       microtubules bind to chromosomes. Some microtubules extend and bind to a microtubule on the opposing pole
       in order to stabilize the mitotic spindle.
-      <v-img
-        class="img"
-        src="https://cdn.kastatic.org/ka-perseus-images/e606653dc9793b3a29b399553d252e06d2586658.png"
-      />
     </p>
+
+    <v-img
+      class="img"
+      src="https://cdn.kastatic.org/ka-perseus-images/e606653dc9793b3a29b399553d252e06d2586658.png"
+    />
   </div>
 </template>
 
@@ -58,9 +57,7 @@
 import { Component, Vue } from "vue-property-decorator";
 
 @Component
-export default class Prophase extends Vue {
-
-}
+export default class Prophase extends Vue {}
 </script>
 
 <style lang="scss" scoped>
