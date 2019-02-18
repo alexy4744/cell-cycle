@@ -6,7 +6,7 @@ import NotFound from "./views/NotFound.vue";
 Vue.use(Router);
 
 export default new Router({
-  mode: "history",
+  mode: process.env.NODE_ENV === "production" ? "hash" : "history",
   base: process.env.BASE_URL,
   routes: [
     {
