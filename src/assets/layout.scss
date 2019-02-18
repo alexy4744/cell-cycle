@@ -82,11 +82,15 @@ li {
 }
 
 .img {
-  width: 60%;
+  width: 40%;
   margin: 0 auto 25px auto;
 }
 
 .img-caption {
   text-align: center;
   margin-bottom: 75px;
+}
+
+a {
+  word-wrap: break-word;
 }

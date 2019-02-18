@@ -24,7 +24,7 @@
 
     <v-fab-transition>
       <v-btn
-        v-if="$route.path === '/sources'"
+        v-if="$route.path === '/faq'"
         :color="color"
         @click="goto(1)"
         style="margin-bottom: 65px;"
@@ -70,9 +70,9 @@
           <v-icon>filter_5</v-icon>
         </v-btn>
 
-        <v-btn dark to="/sources">
-          <span>Sources</span>
-          <v-icon>link</v-icon>
+        <v-btn dark to="/faq">
+          <span>FAQ</span>
+          <v-icon>question_answer</v-icon>
         </v-btn>
       </v-bottom-nav>
     </v-card>
@@ -91,6 +91,7 @@ export default class App extends Vue {
     "red",
     "orange darken-4",
     "indigo",
+    "deep-purple",
     "purple"
   ];
   private routes: string[] = [
@@ -100,7 +101,7 @@ export default class App extends Vue {
     "/metaphase",
     "/anaphase",
     "/telophase",
-    "/sources"
+    "/faq"
   ];
 
   private get color(): string | undefined {
@@ -138,15 +139,9 @@ export default class App extends Vue {
 }
 </script>
 
-<style lang="scss">
-html {
-  overflow-y: auto !important;
-}
-</style>
-
 <style lang="scss" scoped>
 #app {
-  background: white !important;
+  // background: white !important;
 }
 
 .fade-enter-active,

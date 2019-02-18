@@ -32,7 +32,8 @@
 
     <p class="information">
       If the cell does not meet all of the checkpoints, mitosis will be temporarily stopped until the problem has
-      been fixed so that it will pass all the required checkpoints.
+      been fixed so that it will pass all the required checkpoints. This further prevents mutation so that it ensures
+      there are equal number of chromosomes in the daughter and parent cells.
     </p>
 
     <v-img class="img" src="https://cdn.kastatic.org/ka-perseus-images/5407efeb0c059ef99297910a4a46e0fbaec19211.png"/>

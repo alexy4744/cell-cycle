@@ -15,11 +15,6 @@ export default new Router({
       component: Home
     },
     {
-      path: "/sources",
-      name: "sources",
-      component: () => import(/* webpackChunkName: "sources" */ "./views/Sources.vue")
-    },
-    {
       path: "/interphase",
       name: "interphase",
       // route level code-splitting
@@ -58,6 +53,16 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "telophase" */ "./views/Telophase.vue")
+    },
+    {
+      path: "/faq",
+      name: "FAQ",
+      component: () => import(/* webpackChunkName: "faq" */ "./views/FAQ.vue")
+    },
+    {
+      path: "/sources",
+      name: "sources",
+      component: () => import(/* webpackChunkName: "sources" */ "./views/Sources.vue")
     },
     {
       path: "/404",
