@@ -37,7 +37,7 @@
 }
 
 .tagline {
-  max-width: 90vw;
+  max-width: 85vw;
   font-weight: 400;
   margin-top: 5px;
   color: lighten(black, 25%);
@@ -60,7 +60,8 @@
 }
 
 li,
-.information {
+.information,
+.img-caption {
   $map: (
     576px: 16px,
     768px: 16px,
@@ -74,7 +75,7 @@ li {
 }
 
 .information {
-  max-width: 90vw;
+  max-width: 85vw;
   &:not(:last-child) {
     margin-bottom: 40px;
   }
@@ -83,4 +84,9 @@ li {
 .img {
   width: 60%;
   margin: 0 auto 25px auto;
+}
+
+.img-caption {
+  text-align: center;
+  margin-bottom: 75px;
 }
